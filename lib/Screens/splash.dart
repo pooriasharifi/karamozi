@@ -22,12 +22,9 @@ class _splashScreenState extends State<splashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            new SizedBox(
-              height: 500,
-            ),
             new Text(
-              'Lorem Ipsum',
-              style: TextStyle(fontSize: 18, color: Colors.white),
+              'نرم افزار مدیریت کارآموزی',
+              style: Theme.of(context).textTheme.headline1,
             )
           ],
         ),

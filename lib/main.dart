@@ -18,7 +18,16 @@ class _mainAppState extends State<mainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(scaffoldBackgroundColor: bgDark.withOpacity(1)),
+      theme: ThemeData(
+        scaffoldBackgroundColor: bgDark.withOpacity(1),
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontFamily: 'vazir'),
+        ),
+      ),
       home: splashScreen(),
     );
   }
