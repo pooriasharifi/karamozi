@@ -13,7 +13,8 @@ class bottonWidget extends StatelessWidget {
   final bool customCr;
   final Border crBorder;
   final bool customBr;
-
+  final bool txtStyle;
+  final txTheme;
   const bottonWidget(
       {Key? key,
       required this.heightContainer,
@@ -25,7 +26,9 @@ class bottonWidget extends StatelessWidget {
       this.cr = Colors.red,
       this.customCr = true,
       this.crBorder = const Border(),
-      this.customBr = true})
+      this.customBr = true,
+      this.txtStyle = true,
+      this.txTheme})
       : super(key: key);
 
   @override
@@ -43,11 +46,13 @@ class bottonWidget extends StatelessWidget {
               : crBorder),
       child: new Container(
         alignment: Alignment.center,
-        child: new Text(
-          title,
-          style: new TextStyle(
-              color: customTextCr ? (hasBorder ? gr : Colors.white) : crText),
-        ),
+        child: new Text(title,
+            style: txtStyle
+                ? (new TextStyle(
+                    color: customTextCr
+                        ? (hasBorder ? gr : Colors.white)
+                        : crText))
+                : txTheme),
       ),
     );
   }

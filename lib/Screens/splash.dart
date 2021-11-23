@@ -23,8 +23,22 @@ class _splashScreenState extends State<splashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             new Text(
+              'پروژه',
+              style: Theme.of(context).textTheme.headline1,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            new Text(
               'نرم افزار مدیریت کارآموزی',
               style: Theme.of(context).textTheme.headline1,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            new Text(
+              'توسط علی مصطفایی',
+              style: Theme.of(context).textTheme.headline2,
             )
           ],
         ),
